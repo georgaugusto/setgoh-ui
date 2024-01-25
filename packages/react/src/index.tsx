@@ -14,5 +14,6 @@ export * from './components/MultiStep'
 export * from './components/Toast/ToastContext'
 
 export * from './styles/sprinkles.css'
+export * from './styles/index.css'
 
 export { globalStyle, style, keyframes } from '@vanilla-extract/css'

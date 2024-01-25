@@ -12,7 +12,7 @@ export const textInputContainerStyle = recipe({
     {
       display: 'flex',
       boxSizing: 'border-box',
-      alignItems: 'baseline',
+      alignItems: 'center',
 
       border: `2px solid ${vars.colors.backgroundTertiary}`,
 

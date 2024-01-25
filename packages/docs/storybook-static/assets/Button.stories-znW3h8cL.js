@@ -1,0 +1,26 @@
+import{j as c}from"./jsx-runtime-2UOnWPoV.js";import{I as A,r as P,e as C,B as z}from"./index-mAo7JxZ-.js";import{R as e,r as D}from"./index-FaLGlFNx.js";import"./extends-dGVwEr9R.js";import"./index-gMreU1aJ.js";import"./_commonjsHelpers-4gQjN7DL.js";var t=new Map;t.set("bold",function(r){return e.createElement(e.Fragment,null,e.createElement("line",{x1:"40",y1:"128",x2:"216",y2:"128",fill:"none",stroke:r,strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"24"}),e.createElement("polyline",{points:"144 56 216 128 144 200",fill:"none",stroke:r,strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"24"}))});t.set("duotone",function(r){return e.createElement(e.Fragment,null,e.createElement("line",{x1:"40",y1:"128",x2:"216",y2:"128",fill:"none",stroke:r,strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"16"}),e.createElement("polyline",{points:"144 56 216 128 144 200",fill:"none",stroke:r,strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"16"}))});t.set("fill",function(){return e.createElement(e.Fragment,null,e.createElement("path",{d:"M221.7,133.7l-72,72A8.3,8.3,0,0,1,144,208a8.5,8.5,0,0,1-3.1-.6A8,8,0,0,1,136,200V136H40a8,8,0,0,1,0-16h96V56a8,8,0,0,1,4.9-7.4,8.4,8.4,0,0,1,8.8,1.7l72,72A8.1,8.1,0,0,1,221.7,133.7Z"}))});t.set("light",function(r){return e.createElement(e.Fragment,null,e.createElement("line",{x1:"40",y1:"128",x2:"216",y2:"128",fill:"none",stroke:r,strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"12"}),e.createElement("polyline",{points:"144 56 216 128 144 200",fill:"none",stroke:r,strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"12"}))});t.set("thin",function(r){return e.createElement(e.Fragment,null,e.createElement("line",{x1:"40",y1:"128",x2:"216",y2:"128",fill:"none",stroke:r,strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"8"}),e.createElement("polyline",{points:"144 56 216 128 144 200",fill:"none",stroke:r,strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"8"}))});t.set("regular",function(r){return e.createElement(e.Fragment,null,e.createElement("line",{x1:"40",y1:"128",x2:"216",y2:"128",fill:"none",stroke:r,strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"16"}),e.createElement("polyline",{points:"144 56 216 128 144 200",fill:"none",stroke:r,strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"16"}))});var I=function(d,R){return P(d,R,t)},B=D.forwardRef(function(r,d){return e.createElement(A,Object.assign({ref:d},r,{renderPath:I}))});B.displayName="ArrowRight";const T=B,Z={title:"Form/Button",component:C,tags:["autodocs"],parameters:{docs:{description:{component:"Buttons are interface elements that allow the user to initiate a specific action. They are identified by a label that indicates what action will be performed when the user clicks or taps the button."}}},args:{children:"Send",variant:"primary",size:"md",auto:!1,loading:!1,disabled:!1,color:"white"},argTypes:{variant:{options:["primary","secondary","tertiary"],control:{type:"inline-radio"}},size:{options:["sm","md","lg"],control:{type:"inline-radio"}},color:{options:["white","black","red","yellow","green","blue"],control:{type:"inline-radio"}},auto:{name:"auto",description:"Expand button to 100% width",control:{type:"boolean"}},disabled:{name:"isDisabled",description:"Disable button",control:{type:"boolean"}},loading:{name:"loading",description:"Show a loading",control:{type:"boolean"}},onClick:{action:"clicked"}},decorators:[r=>c.jsx(z,{children:r()})]},n={},o={args:{variant:"secondary",children:"Create new"}},a={args:{variant:"tertiary",children:"Cancel"}},s={args:{children:c.jsxs(c.Fragment,{children:["Next step",c.jsx(T,{weight:"bold"})]})}},i={args:{size:"sm"}},l={args:{disabled:!0}};var p,m,u;n.parameters={...n.parameters,docs:{...(p=n.parameters)==null?void 0:p.docs,source:{originalSource:"{}",...(u=(m=n.parameters)==null?void 0:m.docs)==null?void 0:u.source}}};var h,k,g;o.parameters={...o.parameters,docs:{...(h=o.parameters)==null?void 0:h.docs,source:{originalSource:`{
+  args: {
+    variant: 'secondary',
+    children: 'Create new'
+  }
+}`,...(g=(k=o.parameters)==null?void 0:k.docs)==null?void 0:g.source}}};var y,f,b;a.parameters={...a.parameters,docs:{...(y=a.parameters)==null?void 0:y.docs,source:{originalSource:`{
+  args: {
+    variant: 'tertiary',
+    children: 'Cancel'
+  }
+}`,...(b=(f=a.parameters)==null?void 0:f.docs)==null?void 0:b.source}}};var x,E,L;s.parameters={...s.parameters,docs:{...(x=s.parameters)==null?void 0:x.docs,source:{originalSource:`{
+  args: {
+    children: <>\r
+        Next step\r
+        <ArrowRight weight="bold" />\r
+      </>
+  }
+}`,...(L=(E=s.parameters)==null?void 0:E.docs)==null?void 0:L.source}}};var w,j,W;i.parameters={...i.parameters,docs:{...(w=i.parameters)==null?void 0:w.docs,source:{originalSource:`{
+  args: {
+    size: 'sm'
+  }
+}`,...(W=(j=i.parameters)==null?void 0:j.docs)==null?void 0:W.source}}};var S,v,F;l.parameters={...l.parameters,docs:{...(S=l.parameters)==null?void 0:S.docs,source:{originalSource:`{
+  args: {
+    disabled: true
+  }
+}`,...(F=(v=l.parameters)==null?void 0:v.docs)==null?void 0:F.source}}};const $=["Primary","Secondary","Tertiary","WithIcon","Small","Disabled"];export{l as Disabled,n as Primary,o as Secondary,i as Small,a as Tertiary,s as WithIcon,$ as __namedExportsOrder,Z as default};

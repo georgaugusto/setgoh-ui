@@ -16,6 +16,12 @@ export default {
     children: {
       control: { type: null },
     },
+     padding: {
+      options: ['sm', 'md', 'lg'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
   },
 } as Meta<BoxProps>
 

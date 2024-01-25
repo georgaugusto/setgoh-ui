@@ -31,8 +31,6 @@ const withTheme = (Story, context) => {
       ? 'styles_lightThemeClass__1ll0af760'
       : 'styles_darkThemeClass__1ll0af761'
 
-  // console.log(themeStyless)
-
   return React.createElement(
     'div',
     { className: themeStyles },
