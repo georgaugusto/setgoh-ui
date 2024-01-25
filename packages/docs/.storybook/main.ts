@@ -24,7 +24,11 @@ const config: StorybookConfig = {
     autodocs: 'tag',
   },
 
-  async viteFinal(config) {
+  viteFinal: async (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/setgoh-ui/'
+    }
+
     return mergeConfig(config, {
       plugins: [require('@vanilla-extract/vite-plugin').vanillaExtractPlugin()],
       resolve: {
