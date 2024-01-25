@@ -1,0 +1,62 @@
+{
+  "name": "@setgoh-ui/react",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "main": "./dist/index.mjs",
+      "module": "./dist/index.mjs",
+      "import": "./dist/index.mjs"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "require": "./dist/*.js",
+      "main": "./dist/*.js",
+      "module": "./dist/*.mjs",
+      "import": "./dist/*.mjs"
+    },
+    "./dist/index.css": {
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "lint": "eslint src/**/*.ts* --fix",
+    "clean": "rm -r -fo .turbo && rm -r -fo node_modules && rm -r -fo dist"
+  },
+  "devDependencies": {
+    "@setgoh-ui/eslint-config": "*",
+    "@setgoh-ui/tokens": "*",
+    "@setgoh-ui/ts-config": "*",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "@vanilla-extract/esbuild-plugin": "^2.3.1",
+    "react": "^18.2.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-toast": "^1.1.5",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "@vanilla-extract/css": "^1.14.0",
+    "@vanilla-extract/dynamic": "^2.1.0",
+    "@vanilla-extract/recipes": "^0.5.1",
+    "@vanilla-extract/sprinkles": "^1.6.1",
+    "phosphor-react": "^1.4.1"
+  }
+}

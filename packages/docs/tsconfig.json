@@ -1,0 +1,6 @@
+{
+  "extends": "@setgoh-ui/ts-config/react.json",
+  "include": [
+    "src"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@setgoh-ui/docs",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build --docs",
+    "deploy-storybook": "storybook-to-ghpages",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "clean": "rm -r -fo .turbo && rm -r -fo node_modules"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-actions": "^7.6.7",
+    "@storybook/addon-docs": "^7.6.7",
+    "@storybook/addon-essentials": "^7.6.7",
+    "@storybook/addon-links": "^7.6.7",
+    "@storybook/addon-interactions": "^7.6.7",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.7",
+    "@storybook/react": "^7.6.7",
+    "@storybook/react-vite": "^7.6.7",
+    "@storybook/storybook-deployer": "^2.8.16",
+    "@storybook/test": "^7.6.7",
+    "@storybook/testing-library": "^0.2.2",
+    "@vanilla-extract/css": "^1.14.0",
+    "@vanilla-extract/vite-plugin": "^3.9.3",
+    "eslint-plugin-storybook": "^0.6.15",
+    "@vitejs/plugin-react": "^4.2.1",
+    "storybook": "^7.6.10",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  },
+  "dependencies": {
+    "@setgoh-ui/eslint-config": "*",
+    "@setgoh-ui/react": "*",
+    "@setgoh-ui/tokens": "*",
+    "@setgoh-ui/ts-config": "*",
+    "phosphor-react": "^1.4.1",
+    "polished": "^4.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
