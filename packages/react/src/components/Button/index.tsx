@@ -25,12 +25,7 @@ export const Button = forwardRef<ElementRef<'button'>, ButtonProps>(
     const variantButton = buttonStyles({ variant, size, color, auto, loading })
 
     return (
-      <Component
-        className={variantButton}
-        isDisabled={true}
-        {...props}
-        ref={ref}
-      >
+      <Component className={variantButton} {...props} ref={ref}>
         {loading ? <Spinner size={size} /> : children}
       </Component>
     )

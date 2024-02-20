@@ -1,12 +1,12 @@
 import { ComponentProps, ElementType, FC, ReactNode } from 'react'
 
-import { boxContainer } from './styles.css'
+import { boxContainerStyle, BoxContainerVariants } from './styles.css'
 
-export interface BoxProps extends ComponentProps<'div'> {
-  children?: ReactNode
-  as?: ElementType
-  padding: 'sm' | 'md' | 'lg'
-}
+export type BoxProps = ComponentProps<'div'> &
+  BoxContainerVariants & {
+    children?: ReactNode
+    as?: ElementType
+  }
 
 export const Box: FC<BoxProps> = ({
   children,
@@ -14,7 +14,7 @@ export const Box: FC<BoxProps> = ({
   as: Component = 'div',
   ...props
 }) => {
-  const variantBoxContainer = boxContainer({
+  const variantBoxContainer = boxContainerStyle({
     padding,
   })
 

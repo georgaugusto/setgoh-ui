@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css'
-import { recipe } from '@vanilla-extract/recipes'
+import { RecipeVariants, recipe } from '@vanilla-extract/recipes'
 
 import { sprinkles } from '../../styles/sprinkles.css'
 import { vars } from '../../styles/index.css'
@@ -14,7 +14,7 @@ export const baseBoxContainer = style([
   },
 ])
 
-export const boxContainer = recipe({
+export const boxContainerStyle = recipe({
   base: baseBoxContainer,
 
   variants: {
@@ -29,3 +29,5 @@ export const boxContainer = recipe({
     padding: 'md',
   },
 })
+
+export type BoxContainerVariants = RecipeVariants<typeof boxContainerStyle>
