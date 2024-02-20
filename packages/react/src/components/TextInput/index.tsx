@@ -1,21 +1,20 @@
-import { HTMLAttributes, forwardRef } from 'react'
-import { inputStyle, prefixStyle, textInputContainerStyle } from './styles.css'
+import { ComponentProps, ElementRef, forwardRef } from 'react'
+import {
+  TextInputVariants,
+  inputStyle,
+  prefixStyle,
+  textInputContainerStyle,
+} from './styles.css'
 
-type TextInputVariants = {
-  size?: 'sm' | 'md' | 'lg'
-  isErrored?: boolean
-}
+export type TextInputProps = ComponentProps<'input'> &
+  TextInputVariants & {
+    prefix?: string
+  }
 
-export interface TextInputProps
-  extends HTMLAttributes<HTMLInputElement>,
-    TextInputVariants {
-  prefix?: string
-}
-
-export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
-  ({ prefix, isErrored, size, ...props }, ref) => {
+export const TextInput = forwardRef<ElementRef<'input'>, TextInputProps>(
+  ({ prefix, isErrored, sizes, ...props }: TextInputProps, ref) => {
     const variantTextInputContainer = textInputContainerStyle({
-      size,
+      sizes,
       isErrored,
     })
 

@@ -31,7 +31,7 @@ export const textInputContainerStyle = recipe({
   ]),
 
   variants: {
-    size: {
+    sizes: {
       sm: sprinkles({
         paddingBottom: 2,
         paddingTop: 2,
@@ -69,7 +69,7 @@ export const textInputContainerStyle = recipe({
   },
 
   defaultVariants: {
-    size: 'md',
+    sizes: 'md',
     isErrored: false,
   },
 })
