@@ -5,6 +5,7 @@
 <p align="center">
   <a href="#Sobre">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Preview">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Como-rodar-localmente">How to run locally</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 </p>
@@ -29,7 +30,7 @@ To test the [React components](https://www.npmjs.com/package/@setgoh-ui/react) i
 $ npm install --save @setgoh-ui/react
 ```
 
-## Tecnologias
+## Technologies
 
 - [ReactJS](https://nextjs.org/);
 - [TypeScript](https://www.typescriptlang.org/);
