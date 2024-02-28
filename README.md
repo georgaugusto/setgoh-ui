@@ -3,11 +3,10 @@
 </h2>
 
 <p align="center">
-  <a href="#Sobre">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#About">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#Preview">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#Como-rodar-localmente">How to run locally</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+  <a href="#Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#How-to-run-locally">How to run locally</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 ## About
@@ -41,7 +40,7 @@ $ npm install --save @setgoh-ui/react
 - [Phosphor Icons](https://phosphoricons.com/)
 - [Polished](https://polished.js.org/)
 
-**Padronização de código:**
+**Code Standardization:**
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 
