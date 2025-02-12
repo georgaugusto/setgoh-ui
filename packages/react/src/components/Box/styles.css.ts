@@ -10,7 +10,7 @@ export const baseBoxContainer = style([
     background: 'backgroundPrimary',
   }),
   {
-    border: `2px solid ${vars.colors.borderOpaque}`,
+    // border: `2px solid ${vars.colors.borderOpaque}`,
   },
 ])
 

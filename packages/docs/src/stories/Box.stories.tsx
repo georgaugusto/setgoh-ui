@@ -16,7 +16,7 @@ export default {
     children: {
       control: { type: null },
     },
-     padding: {
+    padding: {
       options: ['sm', 'md', 'lg'],
       control: {
         type: 'inline-radio',
@@ -26,3 +26,9 @@ export default {
 } as Meta<BoxProps>
 
 export const Primary: StoryObj<BoxProps> = {}
+
+export const Small: StoryObj<BoxProps> = {
+  args: {
+    className: 'smmmmmmmmm',
+  },
+}

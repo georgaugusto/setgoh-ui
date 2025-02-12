@@ -15,7 +15,7 @@ export type AvatarProps = ComponentProps<typeof AvatarContainer.AvatarImage> &
   }
 
 export const Avatar = forwardRef<ElementRef<'img'>, AvatarProps>(
-  ({ size, delayMs, fallback, ...props }: AvatarProps, ref) => {
+  ({ size, delayMs, fallback, className = '', ...props }: AvatarProps, ref) => {
     const variantAvatarContainer = avatarContainer({
       size,
     })
@@ -25,7 +25,9 @@ export const Avatar = forwardRef<ElementRef<'img'>, AvatarProps>(
     })
 
     return (
-      <AvatarContainer.Root className={variantAvatarContainer}>
+      <AvatarContainer.Root
+        className={`${variantAvatarContainer} ${className}`.trim()}
+      >
         <AvatarContainer.Image className={avatarImage} {...props} ref={ref} />
 
         <AvatarContainer.Fallback

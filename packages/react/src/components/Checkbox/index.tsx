@@ -8,14 +8,14 @@ export type CheckboxProps = ComponentProps<typeof CheckboxUI.Root> & {
 }
 
 export const Checkbox = forwardRef<ElementRef<'button'>, CheckboxProps>(
-  ({ variant, disabled, ...props }: CheckboxProps, ref) => {
+  ({ variant, disabled, className = '', ...props }: CheckboxProps, ref) => {
     const variantCheckboxRootStyles = checkboxRootStyles({
       variant,
     })
 
     return (
       <CheckboxUI.Root
-        className={variantCheckboxRootStyles}
+        className={`${variantCheckboxRootStyles} ${className}`.trim()}
         disabled={disabled}
         {...props}
         ref={ref}

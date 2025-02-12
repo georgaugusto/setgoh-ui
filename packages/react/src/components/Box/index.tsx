@@ -12,6 +12,7 @@ export const Box: FC<BoxProps> = ({
   children,
   padding,
   as: Component = 'div',
+  className = '',
   ...props
 }) => {
   const variantBoxContainer = boxContainerStyle({
@@ -19,7 +20,10 @@ export const Box: FC<BoxProps> = ({
   })
 
   return (
-    <Component className={variantBoxContainer} {...props}>
+    <Component
+      className={`${variantBoxContainer} ${className}`.trim()}
+      {...props}
+    >
       {children}
     </Component>
   )

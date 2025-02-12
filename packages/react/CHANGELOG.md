@@ -1,5 +1,11 @@
 # @setgoh-ui/react
 
+## 0.0.5
+
+### Patch Changes
+
+- Add some fixes to future projects
+
 ## 0.0.4
 
 ### Patch Changes

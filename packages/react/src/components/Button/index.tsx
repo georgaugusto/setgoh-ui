@@ -18,6 +18,7 @@ export const Button = forwardRef<ElementRef<'button'>, ButtonProps>(
       auto,
       loading,
       as: Component = 'button',
+      className = '',
       ...props
     }: ButtonProps,
     ref,
@@ -25,7 +26,11 @@ export const Button = forwardRef<ElementRef<'button'>, ButtonProps>(
     const variantButton = buttonStyles({ variant, size, color, auto, loading })
 
     return (
-      <Component className={variantButton} {...props} ref={ref}>
+      <Component
+        className={`${variantButton} ${className}`.trim()}
+        {...props}
+        ref={ref}
+      >
         {loading ? <Spinner size={size} /> : children}
       </Component>
     )

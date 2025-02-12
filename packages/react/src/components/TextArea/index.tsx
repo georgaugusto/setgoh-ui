@@ -6,10 +6,16 @@ export type TextAreaProps = ComponentProps<'textarea'> & {
 }
 
 export const TextArea = forwardRef<ElementRef<'textarea'>, TextAreaProps>(
-  ({ isErrored, ...props }: TextAreaProps, ref) => {
+  ({ isErrored, className = '', ...props }: TextAreaProps, ref) => {
     const variantTextAreaStyles = textAreaStyles({ isErrored })
 
-    return <textarea className={variantTextAreaStyles} {...props} ref={ref} />
+    return (
+      <textarea
+        className={`${variantTextAreaStyles} ${className}`.trim()}
+        {...props}
+        ref={ref}
+      />
+    )
   },
 )
 

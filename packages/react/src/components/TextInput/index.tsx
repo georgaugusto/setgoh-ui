@@ -12,14 +12,17 @@ export type TextInputProps = ComponentProps<'input'> &
   }
 
 export const TextInput = forwardRef<ElementRef<'input'>, TextInputProps>(
-  ({ prefix, isErrored, sizes, ...props }: TextInputProps, ref) => {
+  (
+    { prefix, isErrored, sizes, className = '', ...props }: TextInputProps,
+    ref,
+  ) => {
     const variantTextInputContainer = textInputContainerStyle({
       sizes,
       isErrored,
     })
 
     return (
-      <div className={variantTextInputContainer}>
+      <div className={`${variantTextInputContainer} ${className}`.trim()}>
         {!!prefix && <span className={prefixStyle}>{prefix}</span>}
         <input ref={ref} className={inputStyle} {...props} />
       </div>

@@ -36,6 +36,7 @@ export function Toast({
   icon,
   duration = 3000,
   variant = 'accent',
+  className = '',
   ...props
 }: ToastProps) {
   const toastContainerCss = styles.toastContainer({ variant })
@@ -43,7 +44,7 @@ export function Toast({
   return (
     <PrimitiveToast.Root
       duration={duration}
-      className={toastContainerCss}
+      className={`${toastContainerCss} ${className}`.trim()}
       {...props}
     >
       {icon && <div className={styles.toastIcon}>{Icons(variant)}</div>}

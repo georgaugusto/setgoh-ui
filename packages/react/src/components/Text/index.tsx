@@ -11,11 +11,24 @@ export type TextProps = HTMLAttributes<HTMLElement> &
   }
 
 export const Text = forwardRef<ElementRef<'p'>, TextProps>(
-  ({ children, size, as: Component = 'p', ...props }: TextProps, ref) => {
+  (
+    {
+      children,
+      size,
+      as: Component = 'p',
+      className = '',
+      ...props
+    }: TextProps,
+    ref,
+  ) => {
     const variantClass = textStyles({ size })
 
     return (
-      <Component className={variantClass} {...props} ref={ref}>
+      <Component
+        className={`${variantClass} ${className}`.trim()}
+        {...props}
+        ref={ref}
+      >
         {children}
       </Component>
     )

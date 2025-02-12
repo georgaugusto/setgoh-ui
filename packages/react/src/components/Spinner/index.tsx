@@ -4,10 +4,14 @@ import { SpinnerVariantSize, spinnerStyle } from './styles.css'
 
 export type SpinnerProps = HTMLAttributes<HTMLElement> & SpinnerVariantSize
 
-export const Spinner: FC<SpinnerProps> = ({ size, ...props }) => {
+export const Spinner: FC<SpinnerProps> = ({
+  size,
+  className = '',
+  ...props
+}) => {
   const variantClass = spinnerStyle({ size })
 
-  return <div className={variantClass} {...props} />
+  return <div className={`${variantClass} ${className}`.trim()} {...props} />
 }
 
 Spinner.displayName = 'Spinner'
