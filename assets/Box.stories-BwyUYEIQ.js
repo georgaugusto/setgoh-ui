@@ -1,0 +1,5 @@
+import{j as e}from"./jsx-runtime-2UOnWPoV.js";import{B as i,T as p}from"./index-0G3n74VZ.js";import"./index-FaLGlFNx.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./extends-dGVwEr9R.js";import"./index-gMreU1aJ.js";const B={title:"Surfaces/Box",component:i,tags:["autodocs"],args:{children:e.jsx(e.Fragment,{children:e.jsx(p,{children:"Testing Box element"})})},argTypes:{children:{control:{type:null}},padding:{options:["sm","md","lg"],control:{type:"inline-radio"}}}},r={},s={args:{className:"smmmmmmmmm"}};var m,o,a;r.parameters={...r.parameters,docs:{...(m=r.parameters)==null?void 0:m.docs,source:{originalSource:"{}",...(a=(o=r.parameters)==null?void 0:o.docs)==null?void 0:a.source}}};var t,n,c;s.parameters={...s.parameters,docs:{...(t=s.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {
+    className: 'smmmmmmmmm'
+  }
+}`,...(c=(n=s.parameters)==null?void 0:n.docs)==null?void 0:c.source}}};const S=["Primary","Small"];export{r as Primary,s as Small,S as __namedExportsOrder,B as default};
